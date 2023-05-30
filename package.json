@@ -1,0 +1,31 @@
+{
+  "name": "algorave-emilio-x-dorian",
+  "version": "1.0.0",
+  "description": "Algorave code for visuals generation ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "dev": "concurrently --kill-others \"node hist-server/index.js \" \"cd static && npx http-server\""
+  },
+  "author": "rexmalebka,emilio-ocelotl",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node-osc": "^6.0.1",
+    "css-loader": "^6.8.1",
+    "hydra-synth": "^1.3.27",
+    "node-osc": "^8.0.11",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1",
+    "style-loader": "^3.3.3",
+    "three": "^0.152.2",
+    "ts-loader": "^9.4.3",
+    "typescript": "^5.0.4",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.152.1",
+    "concurrently": "^8.0.1"
+  }
+}
