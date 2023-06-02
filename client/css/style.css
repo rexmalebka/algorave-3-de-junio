@@ -1,4 +1,23 @@
 body,html{
     margin: 0px;
     padding: 0px;
+    background-color: black;
+}
+
+#three{
+    position: fixed;
+    top: "0px";
+    z-index: 0;
+}
+
+#hydra{
+    position: fixed;
+    top: "0px";
+    z-index: -1;
+}
+
+video{
+    visibility: hidden;
+    position: fixed;
+    top:0;
 }
