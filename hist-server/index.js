@@ -30,6 +30,22 @@ osc.on('/hist', (msg) => {
     io.emit("hist", hist)
 });
 
+osc.on('/bloom', (msg)=>{
+    const strength = msg[1]
+    io.emit("bloom", strength)
+})
+
+osc.on('/fbrotation', (msg)=>{
+    const rotation = msg[1]
+    io.emit("fbrotation", rotation)
+})
+
+osc.on('/fboffset', (msg)=>{
+    const offset = msg.slice(1)
+    console.debug(offset)
+    io.emit("fboffset", offset)
+})
+
 
 
 osc.on('/hist-bye', (msg) => {

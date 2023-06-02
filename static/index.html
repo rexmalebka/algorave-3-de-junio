@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algorave 3 junio Emilio Ocelotl X rexmalebka</title>
 </head>
+
 <body>
+
+    <div id="app"></div>
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <script>
+        // create a new hydra-synth instance
+        var hydra_obj = new Hydra({ detectAudio: false, makeGlobal: false })
+        const hydra = hydra_obj.synth
+
+
+        hydra_obj.canvas.id = "hydra"
+
+        hydra.osc(4, 2, 14).out()
+    </script>
     <script type="module" src="js/app.js"></script>
+
 </body>
+
 </html>
